@@ -7,3 +7,11 @@ rvm:
   - 2.3.0
 notifications:
   email: false
+  webhooks:
+    urls:
+    - 'https://webhook.atomist.com/atomist/travis/teams/T4UMAMTHC'
+    on_cancel: always
+    on_error: always
+    on_start: always
+    on_failure: always
+    on_success: always
